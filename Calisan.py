@@ -37,3 +37,14 @@ class Calisan(Insan):
     def __uygun_statu(self):
         pass
 
+    def zam_hakki(self):
+        try:
+            if self.__tecrube < 2:
+                return 0
+            elif 2 <= self.__tecrube <= 4 and self.__maas < 15000:
+                return self.__maas * (self.__tecrube / 100)
+            elif self.__tecrube > 4 and self.__maas < 25000:
+                return (self.__maas * self.__tecrube) / 200
+        except Exception as e:
+            print(f"Error occurred while calculating salary increase: {e}")
+            return None
