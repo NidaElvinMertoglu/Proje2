@@ -28,3 +28,9 @@ class BeyazYaka(Calisan):
             return (self.get_maas() * self.get_tecrube() * 4 / 100) + self.__tesvik_primi
         else:
             return 0
+
+    def __str__(self):
+        try:
+            return super().__str__() + f"Tesvik Prim: {self.__tesvik_primi} TL\nYeni Maas (Tesvik Primi Dahil): {self.get_yeni_maas()} TL\n"
+        except Exception as e:
+            return f"An error occurred: {str(e)}"
