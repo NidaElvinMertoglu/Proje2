@@ -29,3 +29,10 @@ maviyaka3 = MaviYaka("44585666657", "Meralda", "Guido", 37, "Kadin", "Italyan", 
 print(str(maviyaka1))
 print(str(maviyaka2))
 print(str(maviyaka3))
+
+beyazyaka1 = BeyazYaka("12345678909", "Melek", "Kaya", 30, "Kadin", "Turk", "teknoloji", 37, 25000, 2500)
+beyazyaka2 = BeyazYaka("16665688882", "Aaron", "Diaz", 33, "Erkek", "Ispanyol", "muhasebe", 15, 14000, 500)
+beyazyaka3 = BeyazYaka("15545667894", "Kiryu", "Yamazaki", 34, "Erkek", "Japon", "insaat", 25, 9000, 2500)
+print(str(beyazyaka1))
+print(str(beyazyaka2))
+print(str(beyazyaka3))
