@@ -11,4 +11,8 @@ class MaviYaka(Calisan):
     def set_yipranma_payi(self, yipranma_payi):
         self.__yipranma_payi = yipranma_payi
 
-        
+    def get_yeni_maas(self):
+        return super().get_yeni_maas() + self.__yipranma_payi
+
+    def __uygun_statu(self):
+        return "Mavi Yaka"
