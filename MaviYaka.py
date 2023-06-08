@@ -16,3 +16,13 @@ class MaviYaka(Calisan):
 
     def __uygun_statu(self):
         return "Mavi Yaka"
+
+    def zam_hakki(self):
+        if self.get_tecrube() <= 2:
+            return self.__yipranma_payi * 10
+        elif 2 < self.get_tecrube() <= 4 and self.get_maas() < 15000:
+            return (self.get_maas() * self.get_tecrube() / 100) + (self.__yipranma_payi * 10)
+        elif self.get_tecrube() > 4 and self.get_maas() < 25000:
+            return (self.get_maas() * self.get_tecrube() / 3 / 100) + (self.__yipranma_payi * 10)
+        else:
+            return 0
