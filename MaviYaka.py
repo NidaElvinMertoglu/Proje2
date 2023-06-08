@@ -26,3 +26,9 @@ class MaviYaka(Calisan):
             return (self.get_maas() * self.get_tecrube() / 3 / 100) + (self.__yipranma_payi * 10)
         else:
             return 0
+
+    def __str__(self):
+        try:
+            return super().__str__() + f"Yipranma Payı: {self.__yipranma_payi} TL\nYeni Maas (Yipranma Payi Dahil): {self.get_yeni_maas()} TL\n"
+        except Exception as e:
+            return f"An error occurred: {str(e)}"
