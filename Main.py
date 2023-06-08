@@ -65,3 +65,11 @@ df.fillna(0, inplace=True)
 
 grouped = df.groupby("Nesne").agg({"Tecrube": "mean", "Yeni Maas": "mean"})
 print(grouped)
+
+def yuksek_maas_sayisi(df):
+    yuksek_maaslar = df[df['Yeni Maas'] >= 15000]
+    sayi = len(yuksek_maaslar)
+    return sayi
+
+toplam_sayi = yuksek_maas_sayisi(df)
+print("Toplam {} kisi 15.000 TL ve uzeri maas kazanıyor.".format(toplam_sayi))
