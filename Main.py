@@ -62,3 +62,6 @@ df = pd.DataFrame(data)
 print(df)
 
 df.fillna(0, inplace=True)
+
+grouped = df.groupby("Nesne").agg({"Tecrube": "mean", "Yeni Maas": "mean"})
+print(grouped)
