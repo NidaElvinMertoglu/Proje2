@@ -15,3 +15,10 @@ issiz3 = Issiz("Jolyne", "Smith", 29, "Kadin", "Amerikali", {"mavi yaka": 8, "be
 print(str(issiz1))
 print(str(issiz2))
 print(str(issiz3))
+
+calisan1 = Calisan("", "Emma", "Stone", 30, "Kadin", "Amerikali", "teknoloji", 5, 15000)
+calisan2 = Calisan("", "Thorfinn", "Karslefni", 26, "Erkek", "Izlandali", "insaat", 5, 2000)
+calisan3 = Calisan("", "Bruno", "Ale", 36, "Erkek", "Italyan", "muhasebe", 26, 8000)
+print(str(calisan1))
+print(str(calisan2))
+print(str(calisan3))
