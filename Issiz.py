@@ -38,3 +38,7 @@ class Issiz(Insan):
         except Exception as e:
             print(f"An error occurred while determining the most suitable status: {str(e)}")
             return None
+
+    def __str__(self):
+        return super().__str__() + f"Tecrubeler: {self.__tecrube_dict}\nEn Uygun Statu: {self.get_en_uygun_statu()}\n"
+    
