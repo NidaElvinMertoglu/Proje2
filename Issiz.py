@@ -16,3 +16,25 @@ class Issiz(Insan):
 
     def get_en_uygun_statu(self):
         return self.__en_uygun_statu
+
+    def statu_bul(self):
+        try:
+            max_effect = 0
+            en_uygun_statu = None
+            for statu, tecrube in self.__tecrube_dict.items():
+                effect = 0
+                if statu == "mavi yaka":
+                    effect = tecrube * 0.20
+                elif statu == "beyaz yaka":
+                    effect = tecrube * 0.35
+                elif statu == "yonetici":
+                    effect = tecrube * 0.45
+
+                if effect > max_effect:
+                    max_effect = effect
+                    en_uygun_statu = statu
+
+            return en_uygun_statu
+        except Exception as e:
+            print(f"An error occurred while determining the most suitable status: {str(e)}")
+            return None
