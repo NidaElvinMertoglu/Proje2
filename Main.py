@@ -22,3 +22,10 @@ calisan3 = Calisan("", "Bruno", "Ale", 36, "Erkek", "Italyan", "muhasebe", 26, 8
 print(str(calisan1))
 print(str(calisan2))
 print(str(calisan3))
+
+maviyaka1 = MaviYaka("14984893834", "Harry", "Brown", 25, "Erkek", "Amerikali", "teknoloji", 27, 5000, 0.2)
+maviyaka2 = MaviYaka("29303978666", "Thors", "Knutson", 28, "Erkek", "Izlandali", "insaat", 5, 2000, 0.5)
+maviyaka3 = MaviYaka("44585666657", "Meralda", "Guido", 37, "Kadin", "Italyan", "muhasebe", 56, 4000, 0.5)
+print(str(maviyaka1))
+print(str(maviyaka2))
+print(str(maviyaka3))
