@@ -25,3 +25,15 @@ class Calisan(Insan):
 
     def set_maas(self, maas):
         self.__maas = maas
+
+    def get_yeni_maas(self):
+        try:
+            zam_orani = self.zam_hakki()
+            return self.__maas + zam_orani
+        except Exception as e:
+            print(f"Error occurred while calculating new salary: {e}")
+            return None
+
+    def __uygun_statu(self):
+        pass
+
