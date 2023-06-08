@@ -18,3 +18,13 @@ class BeyazYaka(Calisan):
 
     def __uygun_statu(self):
         return "Beyaz Yaka"
+
+    def zam_hakki(self):
+        if self.get_tecrube() <= 2:
+            return 0
+        elif 2 < self.get_tecrube() <= 4 and self.get_maas() < 15000:
+            return (self.get_maas() * self.get_tecrube() / 100) + self.__tesvik_primi
+        elif self.get_tecrube() > 4 and self.get_maas() < 25000:
+            return (self.get_maas() * self.get_tecrube() * 4 / 100) + self.__tesvik_primi
+        else:
+            return 0
