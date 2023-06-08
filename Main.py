@@ -79,3 +79,11 @@ print(df_sorted)
 
 beyazyaka_tecrube_ust_3 = df[(df["Nesne"] == "Beyaz Yaka") & (df["Tecrube"] > 36)]
 print(beyazyaka_tecrube_ust_3)
+
+def yeni_maas_filtreleme(df):
+    filt = (df['Yeni Maas'] > 10000)
+    yeni_df = df.loc[filt, ['Tc No', 'Yeni Maas']].iloc[2:6]
+    return yeni_df
+
+yeni_dataframe = yeni_maas_filtreleme(df)
+print(yeni_dataframe)
