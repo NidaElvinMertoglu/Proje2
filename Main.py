@@ -76,3 +76,6 @@ print("Toplam {} kisi 15.000 TL ve uzeri maas kazanıyor.".format(toplam_sayi))
 
 df_sorted = df.sort_values("Yeni Maas")
 print(df_sorted)
+
+beyazyaka_tecrube_ust_3 = df[(df["Nesne"] == "Beyaz Yaka") & (df["Tecrube"] > 36)]
+print(beyazyaka_tecrube_ust_3)
