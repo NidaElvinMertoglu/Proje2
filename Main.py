@@ -73,3 +73,6 @@ def yuksek_maas_sayisi(df):
 
 toplam_sayi = yuksek_maas_sayisi(df)
 print("Toplam {} kisi 15.000 TL ve uzeri maas kazanıyor.".format(toplam_sayi))
+
+df_sorted = df.sort_values("Yeni Maas")
+print(df_sorted)
