@@ -87,3 +87,6 @@ def yeni_maas_filtreleme(df):
 
 yeni_dataframe = yeni_maas_filtreleme(df)
 print(yeni_dataframe)
+
+new_df = df[["Ad", "Soyad", "Sektor", "Yeni Maas"]]
+print(new_df)
