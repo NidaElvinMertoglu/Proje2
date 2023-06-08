@@ -43,3 +43,9 @@ class Insan:
 
         def set_uyruk(self, uyruk):
             self.__uyruk = uyruk
+
+        def __str__(self):
+            try:
+                return f"Tc_no: {self.__tc_no}\nAd: {self.__ad}\nSoyad: {self.__soyad}\nYas: {self.__yas}\nCinsiyet: {self.__cinsiyet}\nUyruk: {self.__uyruk}\n"
+            except Exception as e:
+                return f"An error occurred: {str(e)}"
