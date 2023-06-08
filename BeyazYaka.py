@@ -12,3 +12,9 @@ class BeyazYaka(Calisan):
 
     def set_tesvik_primi(self, tesvik_primi):
         self.__tesvik_primi = tesvik_primi
+
+    def get_yeni_maas(self):
+        return super().get_yeni_maas() + self.__tesvik_primi
+
+    def __uygun_statu(self):
+        return "Beyaz Yaka"
