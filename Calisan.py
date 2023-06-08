@@ -48,3 +48,6 @@ class Calisan(Insan):
         except Exception as e:
             print(f"Error occurred while calculating salary increase: {e}")
             return None
+
+    def __str__(self):
+        return super().__str__() + f"Sektor: {self.__sektor}\nTecrube: {self.__tecrube} ay\nMaas: {self.__maas} TL\nYeni Maas: {self.get_yeni_maas()} TL\n"
