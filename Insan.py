@@ -8,44 +8,44 @@ class Insan:
         self.__cinsiyet = cinsiyet
         self.__uyruk = uyruk
 
-        def get_tc_no(self):
+    def get_tc_no(self):
             return self.__tc_no
 
-        def set_tc_no(self, tc_no):
+    def set_tc_no(self, tc_no):
             self.__tc_no = tc_no
 
-        def get_ad(self):
+    def get_ad(self):
             return self.__ad
 
-        def set_ad(self, ad):
+    def set_ad(self, ad):
             self.__ad = ad
 
-        def get_soyad(self):
+    def get_soyad(self):
             return self.__soyad
 
-        def set_soyad(self, soyad):
+    def set_soyad(self, soyad):
             self.__soyad = soyad
 
-        def get_yas(self):
+    def get_yas(self):
             return self.__yas
 
-        def set_yas(self, yas):
+    def set_yas(self, yas):
             self.__yas = yas
 
-        def get_cinsiyet(self):
+    def get_cinsiyet(self):
             return self.__cinsiyet
 
-        def set_cinsiyet(self, cinsiyet):
+    def set_cinsiyet(self, cinsiyet):
             self.__cinsiyet = cinsiyet
 
-        def get_uyruk(self):
+    def get_uyruk(self):
             return self.__uyruk
 
-        def set_uyruk(self, uyruk):
+    def set_uyruk(self, uyruk):
             self.__uyruk = uyruk
 
-        def __str__(self):
-            try:
-                return f"Tc_no: {self.__tc_no}\nAd: {self.__ad}\nSoyad: {self.__soyad}\nYas: {self.__yas}\nCinsiyet: {self.__cinsiyet}\nUyruk: {self.__uyruk}\n"
-            except Exception as e:
-                return f"An error occurred: {str(e)}"
+    def __str__(self):
+        try:
+            return f"Tc_no: {self.__tc_no}\nAd: {self.__ad}\nSoyad: {self.__soyad}\nYas: {self.__yas}\nCinsiyet: {self.__cinsiyet}\nUyruk: {self.__uyruk}\n"
+        except Exception as e:
+            return f"An error occurred: {str(e)}"
